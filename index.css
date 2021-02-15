@@ -1,0 +1,183 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Yeon Sung',cursive;
+    background-color : ivory;
+    background-image:url("https://new-year.spartacodingclub.kr/images/pattern.png");
+    background-position: 670px 100px;
+    background-repeat:repeat-x;
+}
+
+.title{
+    color : darkred;
+    text-align:center;
+    margin-top:50px; 
+    border-bottom:10px ridge rgba(204,61,61,0.8);
+    border-radius: 15px;
+}
+
+.title h1{
+    font-size: 56px;
+    margin:15px;
+}
+
+.zodiac{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:1200px;
+}
+
+.zodiac a{
+    display:block;
+    border:3px darkred solid;
+    width:150px;
+    height:150px;
+    border-collapse: collapse;
+    border-radius:150px;
+    cursor: pointer;
+    background-color:white;
+    box-shadow: 0px 0px 10px 0px darkred;
+    margin:10px;
+    background-size:cover;
+    color:white;
+    text-decoration: white;
+    font-size:25px;
+    text-align: center;
+}
+
+.zodiac a:hover{
+    background-color: rgba(204,61,61,0.8);
+    border:7px darkred solid;
+}
+
+.god{
+    display:block;
+    border:7px darkred solid;
+    width:180px;
+    height:180px;
+    border-radius:180px;
+    cursor: pointer;
+    background-color: rgba(204,61,61,0.8);
+    box-shadow: 0px 0px 10px 0px darkred;
+    background-size:cover;
+    color:white;
+    text-decoration: white;
+    font-size:25px;
+    text-align: center;
+    margin:50px auto 50px auto;
+}
+
+.reTitle{
+    color : darkred;
+    text-align:center;
+    font-size:32px;
+}
+
+.msg{
+    color:darkred;
+    text-align: center;
+    font-size:32px;
+    line-height: 48px;
+}
+
+.btns{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btns .backBtn{
+    border:2px darkred solid;
+    border-radius: 10px;
+    font-size:20px;
+    cursor: pointer;
+    background-color:white;
+    font-family:'Yeon Sung',cursive;
+    margin-right:5px;
+    color: darkred;
+    width:150px;
+    height:50px;
+}
+
+.btns .backBtn:hover{
+    border:3px white double;
+    border-radius: 10px;
+    font-size:20px;
+    cursor: pointer;
+    background-color:darkred;
+    color:white;
+}
+
+.btns .shareBtn{
+    border:2px darkred solid;
+    border-radius: 10px;
+    font-size:20px;
+    background-color: white;
+    font-family:'Yeon Sung',cursive;
+    margin-left:5px;
+    color:darkred;
+    width:150px;
+    height:50px;
+}
+
+.btns .shareBtn:hover{
+    border:3px white double;
+    border-radius: 10px;
+    font-size:20px;
+    cursor: pointer;
+    background-color:darkred;
+    color:white;
+}
+#jsMsg{
+    color:darkred;
+    text-align: center;
+    font-size:32px;
+    line-height: 48px;
+    display:block;
+}
+
+@media screen and  (max-width:800px){
+    body{
+        background-position: 70px -70px;
+        background-size:500px;
+    }
+    .title h1{
+        font-size:36px;
+    }
+    .msg{
+        font-size:24px;
+        line-height: 36px;
+
+        margin-bottom: 36px;
+        padding:10px;
+    }
+    .msg br{
+        display:none;
+    }
+
+    .zodiac{
+        width:100%;
+    }
+    
+    .title{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+
+    .zodiac a{
+        color:darkred;
+    }
+    #jsMsg{
+        font-size:24px;
+        line-height: 36px;
+        margin-bottom: 36px;
+        padding:10px;
+    }
+    #jsMsg br{
+        display:none;
+    }
+}
